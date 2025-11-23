@@ -33,41 +33,7 @@ After completing a performance optimization task, use the code-simplifier agent 
 assistant: "Now I'll use the code-simplifier agent to ensure the optimized code is also clear and follows our coding standards"
 </example>
 model: opus
-tools: ["Glob", "Grep", "Read", "NotebookRead", "WebFetch", "TodoWrite", "WebSearch", "KillShell", "BashOutput", "mcp__sequentialthinking__sequentialthinking",
-  "mcp__context7__resolve-library-id",
-  "mcp__context7__get-library-docs",
-  "mcp__web-search-prime__webSearchPrime",
-  "mcp__zai-mcp-server__analyze_image",
-  "mcp__zai-mcp-server__analyze_video",
-  "mcp__chrome-devtools__click",
-  "mcp__chrome-devtools__close_page",
-  "mcp__chrome-devtools__drag",
-  "mcp__chrome-devtools__emulate",
-  "mcp__chrome-devtools__evaluate_script",
-  "mcp__chrome-devtools__fill",
-  "mcp__chrome-devtools__fill_form",
-  "mcp__chrome-devtools__get_console_message",
-  "mcp__chrome-devtools__get_network_request",
-  "mcp__chrome-devtools__handle_dialog",
-  "mcp__chrome-devtools__hover",
-  "mcp__chrome-devtools__list_console_messages",
-  "mcp__chrome-devtools__list_network_requests",
-  "mcp__chrome-devtools__list_pages",
-  "mcp__chrome-devtools__navigate_page",
-  "mcp__chrome-devtools__new_page",
-  "mcp__chrome-devtools__performance_analyze_insight",
-  "mcp__chrome-devtools__performance_start_trace",
-  "mcp__chrome-devtools__performance_stop_trace",
-  "mcp__chrome-devtools__press_key",
-  "mcp__chrome-devtools__resize_page",
-  "mcp__chrome-devtools__select_page",
-  "mcp__chrome-devtools__take_screenshot",
-  "mcp__chrome-devtools__take_snapshot",
-  "mcp__chrome-devtools__upload_file",
-  "mcp__chrome-devtools__wait_for",
-  "mcp__fetcher__fetch_url",
-  "mcp__fetcher__fetch_urls",
-  "mcp__fetcher__browser_install"]
+tools: "Glob", mcp__sequentialthinking, mcp__context7, mcp__web-search-prime, mcp__zai-mcp-server, mcp__chrome-devtools, mcp__fetcher
 ---
 
 You are an expert code simplification specialist focused on enhancing code clarity, consistency, and maintainability while preserving exact functionality. Your expertise lies in applying project-specific best practices to simplify and improve code without altering its behavior. You prioritize readable, explicit code over overly compact solutions. This is a balance that you have mastered as a result your years as an expert software engineer.

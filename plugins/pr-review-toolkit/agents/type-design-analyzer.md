@@ -3,41 +3,7 @@ name: type-design-analyzer
 description: Use this agent when you need expert analysis of type design in your codebase. Specifically use it: (1) when introducing a new type to ensure it follows best practices for encapsulation and invariant expression, (2) during pull request creation to review all types being added, (3) when refactoring existing types to improve their design quality. The agent will provide both qualitative feedback and quantitative ratings on encapsulation, invariant expression, usefulness, and enforcement.\n\n<example>\nContext: Daisy is writing code that introduces a new UserAccount type and wants to ensure it has well-designed invariants.\nuser: "I've just created a new UserAccount type that handles user authentication and permissions"\nassistant: "I'll use the type-design-analyzer agent to review the UserAccount type design"\n<commentary>\nSince a new type is being introduced, use the type-design-analyzer to ensure it has strong invariants and proper encapsulation.\n</commentary>\n</example>\n\n<example>\nContext: Daisy is creating a pull request and wants to review all newly added types.\nuser: "I'm about to create a PR with several new data model types"\nassistant: "Let me use the type-design-analyzer agent to review all the types being added in this PR"\n<commentary>\nDuring PR creation with new types, use the type-design-analyzer to review their design quality.\n</commentary>\n</example>
 model: inherit
 color: pink
-tools: ["Glob", "Grep", "Read", "NotebookRead", "WebFetch", "TodoWrite", "WebSearch", "KillShell", "BashOutput", "mcp__sequentialthinking__sequentialthinking",
-  "mcp__context7__resolve-library-id",
-  "mcp__context7__get-library-docs",
-  "mcp__web-search-prime__webSearchPrime",
-  "mcp__zai-mcp-server__analyze_image",
-  "mcp__zai-mcp-server__analyze_video",
-  "mcp__chrome-devtools__click",
-  "mcp__chrome-devtools__close_page",
-  "mcp__chrome-devtools__drag",
-  "mcp__chrome-devtools__emulate",
-  "mcp__chrome-devtools__evaluate_script",
-  "mcp__chrome-devtools__fill",
-  "mcp__chrome-devtools__fill_form",
-  "mcp__chrome-devtools__get_console_message",
-  "mcp__chrome-devtools__get_network_request",
-  "mcp__chrome-devtools__handle_dialog",
-  "mcp__chrome-devtools__hover",
-  "mcp__chrome-devtools__list_console_messages",
-  "mcp__chrome-devtools__list_network_requests",
-  "mcp__chrome-devtools__list_pages",
-  "mcp__chrome-devtools__navigate_page",
-  "mcp__chrome-devtools__new_page",
-  "mcp__chrome-devtools__performance_analyze_insight",
-  "mcp__chrome-devtools__performance_start_trace",
-  "mcp__chrome-devtools__performance_stop_trace",
-  "mcp__chrome-devtools__press_key",
-  "mcp__chrome-devtools__resize_page",
-  "mcp__chrome-devtools__select_page",
-  "mcp__chrome-devtools__take_screenshot",
-  "mcp__chrome-devtools__take_snapshot",
-  "mcp__chrome-devtools__upload_file",
-  "mcp__chrome-devtools__wait_for",
-  "mcp__fetcher__fetch_url",
-  "mcp__fetcher__fetch_urls",
-  "mcp__fetcher__browser_install"]
+tools: "Glob", mcp__sequentialthinking, mcp__context7, mcp__web-search-prime, mcp__zai-mcp-server, mcp__chrome-devtools, mcp__fetcher
 ---
 
 You are a type design expert with extensive experience in large-scale software architecture. Your specialty is analyzing and improving type designs to ensure they have strong, clearly expressed, and well-encapsulated invariants.
