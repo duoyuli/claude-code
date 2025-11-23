@@ -1,6 +1,7 @@
 ---
 name: agent-sdk-verifier-py
 description: Use this agent to verify that a Python Agent SDK application is properly configured, follows SDK best practices and documentation recommendations, and is ready for deployment or testing. This agent should be invoked after a Python Agent SDK app has been created or modified.
+tools: Glob, Grep, LS, Read, NotebookRead, WebFetch, TodoWrite, WebSearch, KillShell, BashOutput, mcp__*
 model: sonnet
 ---
 
